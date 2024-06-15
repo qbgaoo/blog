@@ -1,0 +1,11 @@
+---
+title: "Lovely Panda in Chengdu"
+author: "Gao"
+date: "2024-06-16"
+categories: [News]
+image: "panda.webp"
+---
+
+Lovely panda!
+
+![](panda.mp4){fig-align="center" width="6cm" height="16cm"}
