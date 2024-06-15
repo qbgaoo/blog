@@ -2,7 +2,7 @@
 title: "Lovely Panda in Chengdu"
 author: "Gao"
 date: "2024-06-16"
-categories: [News]
+categories: [News, ]
 image: "panda.webp"
 ---
 

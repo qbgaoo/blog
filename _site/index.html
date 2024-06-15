@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -129,7 +129,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="GAO‘s Blog" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
@@ -203,7 +203,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
@@ -225,53 +225,47 @@ window.Quarto = {
      </select>
   </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="News" data-listing-date-sort="1718467200000" data-listing-file-modified-sort="1718438749230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/1st-blog/index.html" class="no-external"></a></p><a href="./posts/1st-blog/index.html" class="no-external">
-<p><img src="./posts/1st-blog/panda.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/1st-blog/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/1st-blog/index.html" class="no-external">Lovely Panda in Chengdu</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/1st-blog/index.html" class="no-external"></a>
-</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="News" data-listing-date-sort="1718467200000" data-listing-file-modified-sort="1718438749230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<a href="./posts/1st-blog/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/1st-blog/panda.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Lovely Panda in Chengdu
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('News'); return false;">
 News
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/1st-blog/index.html" class="no-external">Lovely panda!</a>
+<div class="card-text listing-description">
+Lovely panda!
 </div>
-</div>
-<div class="metadata">
-<a href="./posts/1st-blog/index.html" class="no-external">
-<div class="listing-date">
-Jun 16, 2024
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Gao
 </div>
+<div class="listing-date">
+Jun 16, 2024
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="News,Code,Analysis" data-listing-date-sort="1718380800000" data-listing-file-modified-sort="1718438002493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="1" data-categories="News,Code,Analysis" data-listing-date-sort="1718380800000" data-listing-file-modified-sort="1718438002493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<a href="./posts/post-with-code/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/post-with-code/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Post With Code
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('News'); return false;">
 News
@@ -283,53 +277,48 @@ Code
 Analysis
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
+<div class="card-text listing-description">
+This is a post with executable code.
 </div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Jun 15, 2024
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Harlow Malloc
 </div>
+<div class="listing-date">
+Jun 15, 2024
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="News" data-listing-date-sort="1718121600000" data-listing-file-modified-sort="1718438047645" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
+<div class="g-col-1" data-index="2" data-categories="News" data-listing-date-sort="1718121600000" data-listing-file-modified-sort="1718438047645" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<a href="./posts/welcome/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Welcome To My Blog
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('News'); return false;">
 News
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
+<div class="card-text listing-description">
+This is the first post in a Quarto blog. Welcome!
 </div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jun 12, 2024
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Tristan O’Malley
 </div>
-</a>
+<div class="listing-date">
+Jun 12, 2024
 </div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -417,7 +406,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/www\.quarto\.org");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
