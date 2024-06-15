@@ -1,9 +1,9 @@
 ---
-title: "GAO‘s Blog"
+title: "Gao Blog"
 listing:
   contents: posts
   sort: "date desc"
-  type: grid
+  type: default
   categories: true
   sort-ui: true
   filter-ui: false
